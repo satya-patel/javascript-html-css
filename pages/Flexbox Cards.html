@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<title>Flexbox Cards</title>
+<style>
+    body {
+        background-color: cadetblue;
+        color: whitesmoke;
+    }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .card {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid rgb(247, 235, 235);
+    box-shadow: 2px 2px 6px 0px  rgba(43, 40, 40, 0.3);
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > button {
+    background: rgb(124, 116, 116);
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  button{
+    transition: transform .4s;
+  }
+  button:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+  }
+</style>
+<body>
+<h1><center>Flexbox Cards</center></h1>
+<main class="cards">
+  <article class="card">
+    <img src="../asset/Flexbox Cards Food 1.jpg" alt="Food">
+    <div class="text">
+      <h3>Foods and Nutrients</h3>
+      <p>A food is something that provides nutrients. Nutrients are substances that provide: energy for activity, growth, and all functions of the body such as breathing, digesting food, and keeping warm; materials for the growth and repair of the body, and for keeping the immune system healthy.</p>
+      <button>Know More..</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="../asset/Flexbox Cards Travel 2.jpg" alt="Travel">
+    <div class="text">
+      <h3>Planning For A Holiday Destination?</h3>
+      <p>A vacation is supposed to be a fun and relaxing break from your everyday life. However, a poorly planned vacation can end up being a major headache. Be ready to enjoy your time off by planning your travel, accommodations, and activities ahead of time.</p>
+      <button>Here's how</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="../asset/Flexbox Cards Farmer Protests 3.jpg" alt="Farmer protests">
+    <div class="text">
+      <h3>Farmer Protest</h3>
+      <p>Protesters have been blocking three highways connecting New Delhi to northern and western cities since November to press their demand for scrapping of the laws they say will favor large corporate farms. The protest has continued despite a surge in coronavirus cases that has overwhelmed the country.</p>
+      <button>Read more</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="../asset/Flexbox Cards Education 4.jpg" alt="Education">
+    <div class="text">
+      <h3>Schools To Remain Closed...</h3>
+      <p>Indian students should not return to schools anytime soon. But while they are home, CBSE must get to work on a new course module that is attuned with global learning patterns.</p>
+      <button>Click here for more Education News</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="../asset/Flexbox Cards Pubg 5.jpg" alt="PUBG">
+    <div class="text">
+      <h3>PUBG Mobile India comeback update: Government clears all doubts in RTI queries on launch</h3>
+      <p>PUBG Mobile India is trying really hard to comeback to the country after it was banned by the Government of India in September 2020. There has been no formal initiation of the process even now.</p>
+      <button>Click for more detail</button>
+    </div>
+  </article>
+  <article class="card">
+    <img src="../asset/Flexbox Cards Global Warming 6.jpg" alt="Global Warming">
+    <div class="text">
+      <h3>Global Warming - NASA Earth Observatory</h3>
+      <p>Global warming is the unusually rapid increase in Earth's average surface temperature over the past century primarily due to the greenhouse gases released by people burning fossil fuels.</p>
+      <button>Stop Here...</button>
+    </div>
+  </article>
+</main>
+</body>
+</html>

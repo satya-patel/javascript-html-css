@@ -1,0 +1,141 @@
+<!doctype html>
+<title>Food Corner</title>
+<style>
+* {
+    box-sizing: border-box; 
+  }   
+body {
+    display: flex;
+    min-height: 50vh;
+    flex-direction: row;
+    margin: 0;
+} 
+.outer-col-1 {
+    background:  blue;
+    flex: 1;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: 30px;
+  padding: 35px;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 50px 30px 80px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: violet;
+  color: white;
+}
+
+.outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 60vh;
+  }
+  .aside-col {
+    margin-left: auto;
+    margin-right: auto;
+    width:550px;
+    height:1340px;
+ }
+  img {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:550px;
+    height:350px;
+    box-shadow: 10px 10px 5px green;
+  }
+  .inner-row aside {
+    background: burlywood;
+    flex: 1;
+    padding: 30px;
+  }
+  header {
+    background-image: url(../asset/food_at_right.gif);
+    background-position: right bottom;
+    background-repeat: no-repeat, repeat;
+    background-size: 10em;
+    padding: 1px;
+  }
+  .header-head {
+    text-shadow: 2px 2px 5px white;
+  }
+  header, footer {
+    padding: 1em;
+    height: 20vh;
+    color: white;
+    background-color: blueviolet; 
+ }
+  article, nav {
+    padding: 1em;
+    color: rgb(0, 0, 0);
+  }
+  aside {
+    padding: 1em;
+    color: black;
+    height: 1300px;
+  }
+</style>
+<body>
+    <nav class="outer-col-1">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Food">Food</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About Us</a></li>
+          </ul>
+    </nav>
+    <div class="outer-col-2">
+        <header>
+          <h1 class="header-head"><center>!Food Corner!</center></h1>
+      	</header>
+        <div class="inner-row">
+            <div class="inner-col">
+                <article>
+                    <h1><u>Some Tasty Recipes</u></h1>
+                    <h3>Tasty Recipes To Try At Home: We have curated the best of tasty recipes to try at home and relish with family and friends.</h3>
+                    <h3>1. Funnel Cakes<h3>
+                    <img src="../asset/Funnel-Cake.jpg" alt="pancake">
+                    <p>Funnel cakes are made by pouring batter into hot cooking oil in a circular pattern and deep frying the overlapping mass until golden-brown. The batter is commonly poured through a funnel, creating its texture and giving its name. When made at concession stands, a pitcher with an integral funnel spout is employed. Alton Brown recommends they be made with choux pastry, which expands from steam produced by its high water content.</p>
+                    <h3>2. Sandwich<h3>
+                    <img src="../asset/Sandwich.jpg" alt="upma">
+                    <p>A sandwich is a food typically consisting of vegetables, sliced cheese or meat, placed on or between slices of bread, or more generally any dish wherein bread serves as a container or wrapper for another food type. The sandwich began as a portable finger food in the Western world, though over time it has become prevalent worldwide.</p>
+
+                </article>
+  		        <footer><center>Feedback / About Us / Contact Us </center></footer>
+            </div>
+            <aside class="aside-col">
+                    <h1><u>OUR BEST RECIPES</u></h1>
+                    <ul>
+                        <li>Toasted Ravioli</li>
+                        <li>Skillet Chicken Bulgogi</li>
+                        <li>One Pot Thai-Style Rice Noodles</li>
+                        <li>Garlic-Brown Sugar Chicken Thighs</li>
+                        <li>Klupskies (Polish Burgers)</li>
+                    </ul>
+            </aside>
+        </div>
+    </div>
+</body> 
